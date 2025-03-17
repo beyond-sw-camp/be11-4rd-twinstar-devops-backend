@@ -26,7 +26,7 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: update cluster infomation 
-        run: aws eks update-kubeconfig --name 1team-cluster --region ap-northeast-2
+        run: aaws eks update-kubeconfig --region ap-northeast-2 --name twin-star
 
       - name: Login to ECR
         id: login-ecr
