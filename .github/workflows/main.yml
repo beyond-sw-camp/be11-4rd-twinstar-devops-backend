@@ -35,6 +35,7 @@ jobs:
       - name: build and push docker image to ecr
         env:
           REGISTRY: 156041438567.dkr.ecr.ap-northeast-2.amazonaws.com
+          REPOSITORY: twinstar-backend
           IMAGE_TAG: latest
         run: |
           docker build \
